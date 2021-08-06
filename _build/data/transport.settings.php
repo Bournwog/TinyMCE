@@ -62,7 +62,7 @@ $settings['tiny.custom_buttons2']->fromArray(array(
 $settings['tiny.custom_buttons3']= $modx->newObject('modSystemSetting');
 $settings['tiny.custom_buttons3']->fromArray(array(
     'key' => 'tiny.custom_buttons3',
-    'value' => '',
+    'value' => 'forecolor,backcolor,fontselect,fontsizeselect,tablecontrols',
     'xtype' => 'textfield',
     'namespace' => 'tinymce',
     'area' => 'custom-buttons',
@@ -89,7 +89,7 @@ $settings['tiny.custom_buttons5']->fromArray(array(
 $settings['tiny.custom_plugins']= $modx->newObject('modSystemSetting');
 $settings['tiny.custom_plugins']->fromArray(array(
     'key' => 'tiny.custom_plugins',
-    'value' => 'style,advimage,advlink,modxlink,searchreplace,print,contextmenu,paste,fullscreen,noneditable,nonbreaking,xhtmlxtras,visualchars,media',
+    'value' => 'style,advimage,advlink,modxlink,searchreplace,print,contextmenu,paste,fullscreen,noneditable,nonbreaking,xhtmlxtras,visualchars,media,table',
     'xtype' => 'textfield',
     'namespace' => 'tinymce',
     'area' => 'general',
@@ -315,6 +315,15 @@ $settings['tiny.theme_advanced_font_sizes']->fromArray(array(
 $settings['tiny.use_uncompressed_library']= $modx->newObject('modSystemSetting');
 $settings['tiny.use_uncompressed_library']->fromArray(array(
     'key' => 'tiny.use_uncompressed_library',
+    'value' => false,
+    'xtype' => 'combo-boolean',
+    'namespace' => 'tinymce',
+    'area' => 'general',
+),'',true,true);
+
+$settings['tiny.paste_as_text']= $modx->newObject('modSystemSetting');
+$settings['tiny.paste_as_text']->fromArray(array(
+    'key' => 'tiny.paste_as_text',
     'value' => false,
     'xtype' => 'combo-boolean',
     'namespace' => 'tinymce',
