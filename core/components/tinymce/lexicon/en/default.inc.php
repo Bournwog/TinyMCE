@@ -81,6 +81,8 @@ $_lang['setting_tiny.table_inline_editing'] = 'Table Inline Editing';
 $_lang['setting_tiny.table_inline_editing_desc'] = 'This option gives you the ability to turn on/off the inline table editing controls in Firefox/Mozilla. According to the TinyMCE documentation, these controls are somewhat buggy and not redesignable, so they are disabled by default.';
 $_lang['setting_tiny.template_selected_content_classes'] = 'Template Selected Content Classes';
 $_lang['setting_tiny.template_selected_content_classes_desc'] = 'Specify a list of CSS class names for the template plugin. They must be separated by spaces. Any template element with one of the specified CSS classes will have its content replaced by the selected editor content when first inserted.';
+$_lang['setting_tiny.paste_as_text'] = 'Paste as text';
+$_lang['setting_tiny.paste_as_text_desc'] = 'turn on pemanently pasting as text.';
 
 $_lang['area_advanced-theme'] = 'Advanced Theme';
 $_lang['area_cleanup-output'] = 'Cleanup/Output';
