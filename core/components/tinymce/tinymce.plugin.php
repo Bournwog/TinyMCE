@@ -18,7 +18,8 @@ if ($modx->event->name == 'OnRichTextEditorRegister') {
     $modx->event->output('TinyMCE');
     return;
 }
-require_once $modx->getOption('tiny.core_path',null,$modx->getOption('core_path').'components/tinymce/').'tinymce.class.php';
+$corePath = $modx->getOption('tiny.core_path',null,$modx->getOption('core_path').'components/tinymce/');
+require_once $corePath.'tinymce.class.php';
 $tiny = new TinyMCE($modx,$scriptProperties);
 
 $useEditor = $tiny->context->getOption('use_editor',false);
@@ -62,6 +63,9 @@ switch ($modx->event->name) {
             $modx->event->output('Tiny.browserCallback');
         }
         return '';
+        break;
+     case 'OnTVInputRenderList':
+        $modx->event->output($corePath . 'elements/tv/input/');
         break;
 
    default: break;
